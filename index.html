@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Сучасна пекарня</title>
   </head>
   <body>
@@ -137,6 +137,11 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="/images/warlus-format.jpg"
+                    alt="warlus"
+                  />
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -151,6 +156,11 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="/images/horseshoe-format.jpg"
+                    alt="horseshoe"
+                  />
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 25 м2</p>
@@ -164,6 +174,11 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="/images/handlerbar-format.jpg"
+                    alt="handlerbar"
+                  />
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <div class="format-text">
                     <p>Площа: до 15 м2</p>
@@ -189,7 +204,9 @@
               <h2 class="contact-title section-title">
                 Приєднуйся до мережі пекарень
               </h2>
-              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <p class="contact-text">
+                Заповни форму, щоб ми звʼязались з тобою!
+              </p>
               <form name="contact-form" autocomplete="off" novalidate>
                 <label class="form-label visualy-hidden" for="user-name">
                   Ім’я
@@ -321,9 +338,11 @@
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">close</button>
-        <h2>Замовити дзвінок</h2>
-        <p class="">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <h2 class="modal-title">Замовити дзвінок</h2>
+        <p class="modal-text">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form name="modal-form" autocomplete="off">
           <label class="form-label visualy-hidden" for="user-name">
             Ім’я
           </label>
@@ -334,6 +353,7 @@
               id="user-name"
               name="user-name"
               placeholder="Ім’я"
+              required
             />
           </div>
 
@@ -347,6 +367,7 @@
               id="user-tel"
               name="user-tel"
               placeholder="Телефон"
+              required
             />
           </div>
 
@@ -360,6 +381,7 @@
               id="user-email"
               name="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
 
