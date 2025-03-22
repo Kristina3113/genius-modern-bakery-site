@@ -1,7 +1,11 @@
 .chefs-section {
   &__title {
     position: relative;
-    margin: 0 auto 80px;
+    margin: 0 auto 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 80px;
+    }
 
     &::before,
     &::after {
@@ -23,11 +27,20 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 80px 30px;
+    gap: 30px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 40px 30px;
+    }
   }
 
   &__item {
-    flex-basis: calc((100% - 30px) / 2);
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 }
