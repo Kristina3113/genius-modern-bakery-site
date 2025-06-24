@@ -1,7 +1,7 @@
 .adventages-section {
   padding: 16px 0;
 
-  @media screen and (min-width: $bp-dekstop) {
+  @media screen and (min-width: $bp-desktop) {
     background-color: var(--color-brand-normal);
   }
 
@@ -13,7 +13,7 @@
     border-radius: 24px;
     padding: 24px 40px;
 
-    @media screen and (min-width: $bp-dekstop) {
+    @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
       justify-content: space-between;
       gap: 40px;
@@ -27,7 +27,7 @@
     font-size: 14px;
     font-weight: 300;
 
-    @media screen and (min-width: $bp-dekstop) {
+    @media screen and (min-width: $bp-desktop) {
       color: var(--color-primary-light);
       font-size: 20px;
     }

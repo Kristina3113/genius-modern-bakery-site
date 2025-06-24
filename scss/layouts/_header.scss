@@ -5,7 +5,7 @@
   width: 100%;
   padding-top: 16px;
 
-  @media screen and (min-width: $bp-dekstop) {
+  @media screen and (min-width: $bp-desktop) {
     padding-top: 32px;
   }
 
@@ -25,7 +25,7 @@
   &__menu {
     display: none;
 
-    @media screen and (min-width: $bp-dekstop) {
+    @media screen and (min-width: $bp-desktop) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -37,7 +37,7 @@
   &__button {
     display: none;
 
-    @media screen and (min-width: $bp-dekstop) {
+    @media screen and (min-width: $bp-desktop) {
       display: block;
     }
   }
@@ -50,7 +50,7 @@
     padding: 0;
     fill: var(--color-primary-light);
 
-    @media screen and (min-width: $bp-dekstop) {
+    @media screen and (min-width: $bp-desktop) {
       display: none;
     }
   }
