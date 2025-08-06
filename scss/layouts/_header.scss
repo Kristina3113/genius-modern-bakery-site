@@ -22,6 +22,21 @@
     gap: 40px;
   }
 
+  &__logo {
+    flex-grow: 1;
+    margin: 0 auto;
+    display: block;
+    width: 72px;
+    height: 38px;
+    object-fit: contain;
+    max-width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      width: 114px;
+      height: 56px;
+    }
+  }
+
   &__menu {
     display: none;
 

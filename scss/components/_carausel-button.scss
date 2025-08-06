@@ -1,29 +1,23 @@
-.carausel-button {
+.carousel-button {
   display: flex;
-  flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  padding: 0;
+  fill: var(--color-primary-dark);
   background-color: transparent;
+  border-radius: 50%;
   border: 1px solid var(--color-primary-dark);
   cursor: pointer;
-}
 
-.carausel-button.next {
-  transform: rotate(180deg);
-}
+  &:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+  }
 
-.carausel-icon {
-  fill: var(--color-primary-dark);
-}
-
-.carausel-button:hover {
-  background-color: var(--color-primary-dark);
-}
-
-.carausel-button:hover .carausel-icon {
-  fill: var(--color-primary-light);
+  &.next {
+    transform: rotate(180deg);
+  }
 }
